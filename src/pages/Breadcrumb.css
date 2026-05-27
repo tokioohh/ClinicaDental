@@ -1,0 +1,86 @@
+/* Contenedor principal de la barra de migas de pan */
+.breadcrumb-bar {
+  background-color: var(--ivory);
+  width: 100%;
+  padding: 1.25rem 2rem 0.5rem 2rem; /* Espaciado interno elegante */
+}
+
+/* Contenedor interno alineado con el ancho máximo del sitio */
+.breadcrumb-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem; /* Pequeña separación entre bloques */
+}
+
+/* Estructura de cada bloque (Enlace/Texto + Separador) */
+.bc-item {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+}
+
+/* Estilo para los enlaces interactivos (Inicio y páginas intermedias) */
+.bc-link {
+  color: var(--slate);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Comportamiento al pasar el cursor por encima de los enlaces */
+.bc-link:hover {
+  color: var(--sage);
+}
+
+/* Ajustes específicos para el ícono de Home */
+.bc-home {
+  color: var(--mist);
+  padding: 0.2rem;
+  border-radius: var(--radius-sm);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.bc-home:hover {
+  color: var(--sage-dark);
+  background-color: var(--cream);
+}
+
+/* Contenedor del ícono Chevron (Separador) */
+.bc-sep {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mist);
+  margin: 0 0.5rem;
+  pointer-events: none; /* Evita que interfiera con los clics */
+  user-select: none;    /* Evita que el usuario lo seleccione sin querer */
+}
+
+/* Estilo de la página actual ("Estás aquí") */
+.bc-current {
+  color: var(--sage-dark);
+  font-weight: 500;
+  pointer-events: none; /* Texto plano, no interactivo */
+}
+
+/* Adaptación para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .breadcrumb-bar {
+    padding: 1rem 1rem 0.25rem 1rem;
+  }
+  
+  .bc-item {
+    font-size: 0.85rem; /* Reducimos ligeramente el texto en móviles */
+  }
+  
+  .bc-sep {
+    margin: 0 0.35rem;
+  }
+}

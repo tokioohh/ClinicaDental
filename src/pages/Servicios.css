@@ -1,0 +1,245 @@
+.services-page {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem 6rem 2rem;
+}
+
+/* Cabecera */
+.services-main-header {
+  text-align: center;
+  margin-bottom: 5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-eyebrow-top {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.services-title-main {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  color: var(--sage-dark);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.services-subtitle-main {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--slate);
+  line-height: 1.6;
+}
+
+/* Envoltorio de filas de servicios */
+.services-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+/* Tarjeta horizontal tipo fila */
+.service-row-card {
+  background-color: var(--white);
+  border: 1px solid var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  box-shadow: 0 4px 20px rgba(74, 124, 111, 0.01);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-row-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(74, 124, 111, 0.04);
+}
+
+/* Sección izquierda: Ícono e información básica */
+.service-row-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex: 1;
+}
+
+.service-row-icon-box {
+  width: 56px;
+  height: 56px;
+  background-color: var(--ivory);
+  border: 1px solid var(--cream);
+  border-radius: var(--radius-md);
+  color: var(--sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.service-row-icon-box svg {
+  width: 26px;
+  height: 26px;
+}
+
+.service-row-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gold);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.service-row-text h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--charcoal);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.service-row-text p {
+  font-size: 0.95rem;
+  color: var(--slate);
+  line-height: 1.6;
+  max-width: 650px;
+}
+
+/* Sección derecha: Precios y botón de acción */
+.service-row-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.25rem;
+  min-width: 200px;
+  text-align: right;
+}
+
+.service-price-tag {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label {
+  font-size: 0.75rem;
+  color: var(--mist);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.price-value {
+  font-family: var(--font-body);
+  font-size: 1.35rem;
+  color: var(--sage-dark);
+  font-weight: 500;
+}
+
+.service-row-action-btn {
+  font-size: 0.9rem;
+  color: var(--sage);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.service-row-card:hover .service-row-action-btn {
+  color: var(--gold);
+}
+
+/* Banner de Cierre */
+.services-info-banner {
+  background-color: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.info-banner-content h3 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--sage-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.info-banner-content p {
+  color: var(--slate);
+  font-size: 0.95rem;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.services-banner-btn {
+  background-color: var(--sage-dark);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.services-banner-btn:hover {
+  background-color: var(--charcoal);
+}
+
+/* Diseño Responsivo */
+@media (max-width: 992px) {
+  .service-row-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .service-row-right {
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    border-top: 1px dashed var(--cream);
+    padding-top: 1.5rem;
+  }
+  
+  .services-info-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .services-banner-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-page {
+    padding: 2rem 1rem 4rem 1rem;
+  }
+  
+  .services-title-main {
+    font-size: 2.2rem;
+  }
+  
+  .service-row-left {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
