@@ -15,10 +15,13 @@ import Implantes from './pages/Implantes'
 import Blanqueamiento from './pages/Blanqueamiento'
 import Odontopediatria from './pages/Odontopediatria'
 import AgendarCita from './pages/Agendarcita'
+import NotFound from './pages/NotFound'
+
 export default function App() {
   return (
     <Routes>
       {/* Layout envuelve todas las páginas: Header + Breadcrumb + Outlet (Contenido) + Footer */}
+      <Route path="*" element={<NotFound />} />
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         
