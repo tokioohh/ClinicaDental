@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada - Clínica Dental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #0ea5e9; /* Azul dental principal */
+            --primary-dark: #0369a1;
+            --text-color: #1e293b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .error-container {
+            text-align: center;
+            max-width: 550px;
+            background: var(--card-bg);
+            padding: 50px 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .error-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .error-icon svg {
+            width: 60px;
+            height: 60px;
+            color: var(--primary-color);
+        }
+
+        .error-code {
+            font-size: 6rem;
+            font-weight: 700;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            text-decoration: none;
+            padding: 14px 32px;
+            font-weight: 500;
+            border-radius: 12px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(14, 165, 233, 0.3);
+        }
+
+        .btn-home:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.4);
+        }
+
+        .btn-home:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-container">
+        <div class="error-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+            </svg>
+        </div>
+
+        <div class="error-code">404</div>
+        
+        <h1>¿Perdido en el diagnóstico?</h1>
+        <p>La página que estás buscando no existe, ha sido removida o cambió de lugar. No te preocupes, mantengamos la sonrisa y regresemos al inicio.</p>
+        
+        <a href="/" class="btn-home">Volver al Inicio</a>
+    </div>
+
+</body>
+</html>
