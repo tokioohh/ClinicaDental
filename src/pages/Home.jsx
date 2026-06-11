@@ -7,9 +7,9 @@ import medico2 from '../assets/Medico2.png'
 import medico3 from '../assets/Medico3.png'
 import medico4 from '../assets/Medico4.png'
 
-import clinica1 from '../assets/imagenClinica1.webp'
-import clinica2 from '../assets/imagenClinica2.webp'
-import clinica3 from '../assets/imagenClinica3.webp'
+import clinica1 from "../assets/ImagenClinica1.webp";
+import clinica2 from "../assets/ImagenClinica2.webp";
+import clinica3 from "../assets/ImagenClinica3.webp";
 
 const CLINIC_IMAGES = [
   clinica1,
